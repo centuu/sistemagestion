@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0FD49FDA-FA27-420C-8904-C8007BD23CA8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProgramaGestion.My.MyApplication</StartupObject>
+    <RootNamespace>ProgramaGestion</RootNamespace>
+    <AssemblyName>ProgramaGestion</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProgramaGestion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProgramaGestion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Screenshot_20200513-125900_2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v18.1.Core, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.1.UI, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v18.1.Core, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v18.1.Core, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Export, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v18.1.Core, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1.UI, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v18.1.Extensions, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v18.1.Core, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.1.Extensions, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v18.1, Version=18.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AJUSTES\ACTIVAR.Designer.vb">
+      <DependentUpon>ACTIVAR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AJUSTES\ACTIVAR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAJA\CAJA.Designer.vb">
+      <DependentUpon>CAJA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CAJA\CAJA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAJA\NOTACREDITO.Designer.vb">
+      <DependentUpon>NOTACREDITO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CAJA\NOTACREDITO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN\CAMBIARCLAVE.Designer.vb">
+      <DependentUpon>CAMBIARCLAVE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN\CAMBIARCLAVE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN\LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN\LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AJUSTES\USUARIOS.Designer.vb">
+      <DependentUpon>USUARIOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AJUSTES\USUARIOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Caja.Designer.vb">
+      <DependentUpon>Caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Caja.vb" />
+    <Compile Include="ORMDataModel1Code\DetallePago.Designer.vb">
+      <DependentUpon>DetallePago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\DetallePago.vb" />
+    <Compile Include="STOCK\LISTAPRECIOS.Designer.vb">
+      <DependentUpon>LISTAPRECIOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOCK\LISTAPRECIOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOCK\STOCK.Designer.vb">
+      <DependentUpon>STOCK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOCK\STOCK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AJUSTES\DATOS.Designer.vb">
+      <DependentUpon>DATOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AJUSTES\DATOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLIENTES\CLIENTES.Designer.vb">
+      <DependentUpon>CLIENTES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENTES\CLIENTES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INICIO.Designer.vb">
+      <DependentUpon>INICIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INICIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Clientes.vb" />
+    <Compile Include="VENTAS\FACTURAS\DETALLEREMITO.Designer.vb">
+      <DependentUpon>DETALLEREMITO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\DETALLEREMITO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\FACTURAA.Designer.vb">
+      <DependentUpon>FACTURAA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\FACTURAA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\FACTURAB.Designer.vb">
+      <DependentUpon>FACTURAB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\FACTURAB.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\FACTURAC.Designer.vb">
+      <DependentUpon>FACTURAC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\FACTURAC.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Articulos.Designer.vb">
+      <DependentUpon>Articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Articulos.vb" />
+    <Compile Include="ORMDataModel1Code\ConnectionHelper.vb" />
+    <Compile Include="ORMDataModel1Code\DetalleVentas.Designer.vb">
+      <DependentUpon>DetalleVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\DetalleVentas.vb" />
+    <Compile Include="ORMDataModel1Code\Usuarios.Designer.vb">
+      <DependentUpon>Usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Usuarios.vb" />
+    <Compile Include="ORMDataModel1Code\Ventas.Designer.vb">
+      <DependentUpon>Ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ORMDataModel1Code\Ventas.vb" />
+    <Compile Include="VENTAS\FACTURAS\NOTACREDITO.Designer.vb">
+      <DependentUpon>NOTACREDITO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\NOTACREDITO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\REMITOX.Designer.vb">
+      <DependentUpon>REMITOX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\REMITOX.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VENTAS\PAGO.Designer.vb">
+      <DependentUpon>PAGO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\PAGO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENTAS\NUEVAVENTA.Designer.vb">
+      <DependentUpon>NUEVAVENTA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\NUEVAVENTA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\DETALLE.Designer.vb">
+      <DependentUpon>DETALLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\DETALLE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\FACTURAS.Designer.vb">
+      <DependentUpon>FACTURAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\FACTURAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\REMITOR.Designer.vb">
+      <DependentUpon>REMITOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS\FACTURAS\REMITOR.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VENTAS\VENTAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENTAS\VENTAS.Designer.vb">
+      <DependentUpon>VENTAS.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WaitForm10.designer.vb">
+      <DependentUpon>WaitForm10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XpoHelper.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AJUSTES\ACTIVAR.resx">
+      <DependentUpon>ACTIVAR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AJUSTES\DATOS.resx">
+      <DependentUpon>DATOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAJA\CAJA.resx">
+      <DependentUpon>CAJA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAJA\NOTACREDITO.resx">
+      <DependentUpon>NOTACREDITO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN\CAMBIARCLAVE.resx">
+      <DependentUpon>CAMBIARCLAVE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN\LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AJUSTES\USUARIOS.resx">
+      <DependentUpon>USUARIOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOCK\LISTAPRECIOS.resx">
+      <DependentUpon>LISTAPRECIOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOCK\STOCK.resx">
+      <DependentUpon>STOCK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CLIENTES\CLIENTES.resx">
+      <DependentUpon>CLIENTES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INICIO.resx">
+      <DependentUpon>INICIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\FACTURAS\DETALLEREMITO.resx">
+      <DependentUpon>DETALLEREMITO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\FACTURAS\FACTURAA.resx">
+      <DependentUpon>FACTURAA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\FACTURAS\FACTURAB.resx">
+      <DependentUpon>FACTURAB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\FACTURAS\FACTURAC.resx">
+      <DependentUpon>FACTURAC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\FACTURAS\NOTACREDITO.resx">
+      <DependentUpon>NOTACREDITO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\FACTURAS\REMITOX.resx">
+      <DependentUpon>REMITOX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\PAGO.resx">
+      <DependentUpon>PAGO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\NUEVAVENTA.resx">
+      <DependentUpon>NUEVAVENTA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\FACTURAS\DETALLE.resx">
+      <DependentUpon>DETALLE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\FACTURAS\FACTURAS.resx">
+      <DependentUpon>FACTURAS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\FACTURAS\REMITOR.resx">
+      <DependentUpon>REMITOR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS\VENTAS.resx">
+      <DependentUpon>VENTAS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm10.resx">
+      <DependentUpon>WaitForm10.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="ORMDataModel1.xpo" />
+    <None Include="ORMDataModel1.xpo.diagram">
+      <DependentUpon>ORMDataModel1.xpo</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Screenshot_20200513-125900_2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets" Condition="Exists('..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets'))" />
+  </Target>
+</Project>
